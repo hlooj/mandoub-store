@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر المندوب</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">MANDOUB<span>.</span></div>
+        <button id="adminBtn">تسجيل دخول الرئيس</button>
+    </header>
+
+    <div class="payment-bar">
+        طريقة دفع جيب: <span>779786705</span>
+    </div>
+
+    <section id="adminPanel" class="hidden">
+        <div class="admin-header">
+            <h2>🛠️ لوحة الإدارة</h2>
+            <button id="logoutBtn">خروج X</button>
+        </div>
+        <div class="inputs-group">
+            <input id="pImg" type="text" placeholder="رابط صورة المنتج">
+            <input id="pName" type="text" placeholder="اسم المنتج">
+            <input id="pYer" type="number" placeholder="السعر بالريال اليمني">
+            <input id="pSar" type="number" placeholder="السعر بالريال السعودي">
+        </div>
+        <button id="saveBtn">نشر المنتج الآن</button>
+    </section>
+
+    <main id="productGrid"></main>
+
+    <script src="script.js"></script>
+</body>
+</html>
